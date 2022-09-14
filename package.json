@@ -2,10 +2,10 @@
   "name": "calc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://HerbertLiskin.github.io/calc",
+  "homepage": "https://herbertliskin.github.io/calc",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-app-rewired start",
     "build": "NODE_ENV=production react-app-rewired build",
     "generate": "graphql-codegen --config src/gql/graphql.codegen.yml"
