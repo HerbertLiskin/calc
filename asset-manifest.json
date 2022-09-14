@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/calc/static/css/main.95811f42.css",
-    "main.js": "/calc/static/js/main.3fa39320.js",
+    "main.js": "/calc/static/js/main.08492514.js",
     "static/media/RobotoMono-ExtraLight.ttf": "/calc/static/media/RobotoMono-ExtraLight.2ccde177314ac34f20b8.ttf",
     "static/media/NeueHaasDisplay-Thin.woff": "/calc/static/media/NeueHaasDisplay-Thin.82ddb55d7dc8f9a63fbd.woff",
     "static/media/NeueHaasDisplay-Light.woff": "/calc/static/media/NeueHaasDisplay-Light.2090734213b149337a92.woff",
@@ -17,10 +17,10 @@
     "static/media/RPBRAWL-Regular.woff2": "/calc/static/media/RPBRAWL-Regular.7daccf519adb2e6efde9.woff2",
     "index.html": "/calc/index.html",
     "main.95811f42.css.map": "/calc/static/css/main.95811f42.css.map",
-    "main.3fa39320.js.map": "/calc/static/js/main.3fa39320.js.map"
+    "main.08492514.js.map": "/calc/static/js/main.08492514.js.map"
   },
   "entrypoints": [
     "static/css/main.95811f42.css",
-    "static/js/main.3fa39320.js"
+    "static/js/main.08492514.js"
   ]
 }
