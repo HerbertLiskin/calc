@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  margin: 0;
+  font-family: 'NeueHaasDisplay', Arial;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #F5F5F5;
+  color: #252525;
+}
+
+@screen ms {
+  html {
+    font-size: 18px;
+  }
+}
+
+@screen mm {
+  html {
+    font-size: 18px;
+  }
+}
+
+@screen ml {
+  html {
+    font-size: 18px;
+  }
+}
+
+@screen t {
+  html {
+    font-size: 18px;
+  }
+}
+
+@screen dxs {
+  html {
+    font-size: 16px; 
+  }
+}
+
+@screen ds {
+  html {
+    font-size: 17px;
+  }
+}
+
+@screen dm {
+  html {
+    font-size: 18px;
+  }
+}
+
+@screen dl {
+  html {
+    font-size: 18px;
+  }
+}
+
+@screen dxl {
+  html {
+    font-size: 20px;
+  }
+}
+
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('./resources/fonts/NeueHaasDisplay-Light.woff2') format('woff2'),
+       url('./resources/fonts/NeueHaasDisplay-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+
+}
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('./resources/fonts/NeueHaasDisplay-Thin.woff2') format('woff2'),
+       url('./resources/fonts/NeueHaasDisplay-Thin.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+
+}
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('./resources/fonts/NeueHaasDisplay-Roman.woff2') format('woff2'),
+       url('./resources/fonts/NeueHaasDisplay-Roman.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('./resources/fonts/NeueHaasDisplay-Bold.woff2') format('woff2'),
+       url('./resources/fonts/NeueHaasDisplay-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NeueHaasDisplay';
+  src: url('./resources/fonts/NeueHaasDisplay-Medium.woff2') format('woff2'),
+       url('./resources/fonts/NeueHaasDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('./resources/fonts/RobotoMono-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'RPBrawl';
+  src: url('./resources/fonts/RPBRAWL-Regular.woff2') format('woff2'),
+       url('./resources/fonts/RPBRAWL-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer utilities {
+  .cardGradient {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)), #F7F7F7;
+  }
+
+  .cardImgBg {
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 72%);
+  }
+
+  .buttonBase {
+    position: relative;
+    box-shadow: 0px 34.4023px 42.1428px rgba(65, 113, 185, 0.21), 
+                0px 13.2513px 13.4233px rgba(65, 113, 185, 0.127556), 
+                0px 2.80315px 3.43386px rgba(65, 113, 185, 0.0824444);
+    background: #E9ECF0;
+  }
+  .buttonBase::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    padding: 2px;
+    
+    background: linear-gradient(169.85deg, #FFFFFF 7.47%, rgba(255, 255, 255, 0) 70.78%),
+                linear-gradient(180deg, rgba(128, 178, 254, 0) 61.54%, rgba(80, 148, 252, 0.66) 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+  .shadowBlue {
+    box-shadow: 0px 40px 49px rgba(65, 113, 185, 0.21), 
+                0px 15.4074px 15.6074px rgba(65, 113, 185, 0.127556), 
+                0px 3.25926px 3.99259px rgba(65, 113, 185, 0.0824444);
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.recharts-tooltip-wrapper {
+  border: none;
+  outline: none;
+}
+
+
