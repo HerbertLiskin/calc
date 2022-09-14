@@ -79,6 +79,7 @@ export default function HomePage() {
 
   const profit = (
     Number(totalRevenue) -
+    Number(costOfAllBottles) -
     Number(totalСost) -
     Number(distributorPrice) -
     Number(tax)
@@ -116,7 +117,7 @@ export default function HomePage() {
             onChange={onChange}
           />
           <InputText
-            title={`Цена Расходников на варку ${liters}Л в ₽`}
+            title={`Цена ингердиентов на варку ${liters}Л в ₽`}
             name="consumablePrice"
             placeholder="0"
             value={consumablePrice}
@@ -245,7 +246,8 @@ export default function HomePage() {
             title={
               <div>
                 Чистая прибыль <br />
-                {totalRevenue} - {totalСost} - {distributorPrice} - {tax}
+                {totalRevenue} - {costOfAllBottles} - {totalСost} -{' '}
+                {distributorPrice} - {tax}
               </div>
             }
             name="profit"
